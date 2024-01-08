@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <form action="{% url 'result' %}" method="post">
+        {% csrf_token %}
+        <label for="user_input">Enter something:</label>
+        <input type="text" name="user_input">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
